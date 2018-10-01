@@ -1,6 +1,6 @@
 
 build_script:
   - "echo %PATH%"
-  - "c:\cygwin64\bin\bash.exe -c \"which cl\""
-  - "c:\cygwin64\bin\bash.exe -c \"which link\""
-  - "c:\cygwin64\bin\bash.exe -c \"./build LIBS netlrts-win-x86_64 --with-production --enable-error-checking --without-romio -j4\""
+  - "c:\\cygwin64\\bin\\bash.exe -c \"which cl\""
+  - "c:\\cygwin64\\bin\\bash.exe -c \"which link\""
+  - "c:\\cygwin64\\bin\\bash.exe -c \"./build LIBS netlrts-win-x86_64 --with-production --enable-error-checking --without-romio -j4\""
