@@ -9,8 +9,7 @@ build_script:
   - "c:\\cygwin64\\bin\\bash.exe -c \"which cl\""
   - "c:\\cygwin64\\bin\\bash.exe -c \"which link\""
   - "c:\\cygwin64\\bin\\bash.exe -c \"./build LIBS netlrts-win-x86_64 --with-production --enable-error-checking --without-romio -j2\""
-
-test_script:
+#test_script:
   - "cd netlrts-win-x86_64\\tmp"
   - "echo %PATH%"
   - "c:\\cygwin64\\bin\\bash.exe -c \"pwd\""
