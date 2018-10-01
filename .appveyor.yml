@@ -12,4 +12,8 @@ build_script:
 
 test_script:
   - "cd netlrts-win-x86_64\\tmp"
+  - "echo %PATH%"
+  - "c:\\cygwin64\\bin\\bash.exe -c \"pwd\""
+  - "c:\\cygwin64\\bin\\bash.exe -c \"which cl\""
+  - "c:\\cygwin64\\bin\\bash.exe -c \"which link\""
   - "c:\\cygwin64\\bin\\bash.exe -c \"make test TESTOPTS=\"++local\"\""
