@@ -1,5 +1,6 @@
 
 build_script:
+  - "set PATH=C:\\cygwin64\\bin;%PATH%"
   - "echo %PATH%"
   - "c:\\cygwin64\\bin\\bash.exe -c \"which cl\""
   - "c:\\cygwin64\\bin\\bash.exe -c \"which link\""
