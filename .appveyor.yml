@@ -5,7 +5,11 @@ build_script:
   - call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars64.bat"
   - "set PATH=C:\\cygwin64\\bin;%PATH%"
   - "echo %PATH%"
-  - "c:\\cygwin64\\bin\\bash.exe -c \"which cl\""
   - "c:\\cygwin64\\bin\\bash.exe -c \"mv /usr/bin/link /usr/bin/link.disable\""
+  - "c:\\cygwin64\\bin\\bash.exe -c \"which cl\""
   - "c:\\cygwin64\\bin\\bash.exe -c \"which link\""
-  - "c:\\cygwin64\\bin\\bash.exe -c \"./build LIBS netlrts-win-x86_64 --with-production --enable-error-checking --without-romio -j4\""
+  - "c:\\cygwin64\\bin\\bash.exe -c \"./build LIBS netlrts-win-x86_64 --with-production --enable-error-checking --without-romio -j2\""
+
+test_script:
+  - "cd netlrts-win-x86_64\\tmp"
+  - "c:\\cygwin64\\bin\\bash.exe -c \"make test TESTOPTS=\"++local\"\""
