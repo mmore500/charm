@@ -26,7 +26,7 @@ endmacro()
 # Gets flags common to both the C and C++ compiler
 function(libomp_get_c_and_cxxflags_common flags)
   set(flags_local)
-  libomp_append(flags_local -std=c++11 LIBOMP_HAVE_STD_CPP11_FLAG)
+  libomp_append(flags_local -std=c++14 LIBOMP_HAVE_STD_CPP11_FLAG)
   libomp_append(flags_local -fno-exceptions LIBOMP_HAVE_FNO_EXCEPTIONS_FLAG)
   libomp_append(flags_local -fno-rtti LIBOMP_HAVE_FNO_RTTI_FLAG)
   if(${LIBOMP_ENABLE_WERROR})

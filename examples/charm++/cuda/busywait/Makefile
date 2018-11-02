@@ -5,7 +5,7 @@ OPTS = -DUSE_NVTX
 # set CUDATOOLKIT_HOME to the CUDA toolkit directory
 CUDATOOLKIT_HOME ?= /usr/local/cuda
 NVCC = $(CUDATOOLKIT_HOME)/bin/nvcc
-NVCC_FLAGS = -c -std=c++11
+NVCC_FLAGS = -c -std=c++14
 NVCC_INC = -I$(CUDATOOLKIT_HOME)/include
 CHARM_INC = -I../../../../include
 LD_LIBS = -lnvToolsExt

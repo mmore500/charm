@@ -7,7 +7,7 @@ USE_WR = #-DUSE_WR
 # set CUDATOOLKIT_HOME to the CUDA toolkit directory
 CUDATOOLKIT_HOME ?= /usr/local/cuda
 NVCC = $(CUDATOOLKIT_HOME)/bin/nvcc
-NVCC_FLAGS = -c -std=c++11 $(USE_WR)
+NVCC_FLAGS = -c -std=c++14 $(USE_WR)
 NVCC_INC = -I$(CUDATOOLKIT_HOME)/include
 CHARM_INC = -I../../../../include
 LD_LIBS =

@@ -5,7 +5,7 @@ OPTS = -O3 -fopt-info-vec-optimized #-DUSE_NVTX
 # set CUDATOOLKIT_HOME to the CUDA toolkit directory
 CUDATOOLKIT_HOME ?= /usr/local/cuda
 NVCC = $(CUDATOOLKIT_HOME)/bin/nvcc
-NVCC_FLAGS = -O3 -c -std=c++11 -DTILE_SIZE=16 -use_fast_math
+NVCC_FLAGS = -O3 -c -std=c++14 -DTILE_SIZE=16 -use_fast_math
 NVCC_INC = -I$(CUDATOOLKIT_HOME)/include
 CHARM_INC = -I../../../../include
 LD_LIBS = #-lnvToolsExt

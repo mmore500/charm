@@ -4,7 +4,7 @@
 CC      = cc
 CXX     = CC
 COPTS   = -c -O3
-CXXOPTS = -c -O3 -std=c++11 -DC11_AVAIL=1
+CXXOPTS = -c -O3 -std=c++14 -DC11_AVAIL=1
 
 LOPTS   = -lrca
 

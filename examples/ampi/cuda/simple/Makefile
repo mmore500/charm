@@ -18,7 +18,7 @@ CXXFLAGS=$(DEFS)
 simple: simple-cuda.o
 
 simple-cuda.o: simple-cuda.cu
-	$(NVCC) $(DEFS) -std=c++11 -I$(CHARMDIR)/include -c simple-cuda.cu
+	$(NVCC) $(DEFS) -std=c++14 -I$(CHARMDIR)/include -c simple-cuda.cu
 
 test:
 	./simple +vp 1
